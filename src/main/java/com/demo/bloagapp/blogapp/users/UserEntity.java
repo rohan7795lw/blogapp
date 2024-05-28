@@ -9,6 +9,8 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.AccessLevel;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
@@ -18,6 +20,8 @@ import lombok.ToString;
 @Entity(name = "users")
 @Getter
 @Setter
+@Builder
+@AllArgsConstructor
 @ToString
 @RequiredArgsConstructor
 @NoArgsConstructor(access =  AccessLevel.PROTECTED)
