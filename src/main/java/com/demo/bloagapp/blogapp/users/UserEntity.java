@@ -24,32 +24,27 @@ import lombok.ToString;
 @AllArgsConstructor
 @ToString
 @RequiredArgsConstructor
-@NoArgsConstructor(access =  AccessLevel.PROTECTED)
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
 public class UserEntity {
-	
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE)
 	@Column(nullable = false)
 	private long id;
-	
+
 	@Column(nullable = false)
 	@NonNull
 	private String username;
-	
+
 	@Column(nullable = false)
 	private String email;
-	
+
 	@Column(nullable = true)
 	@Nullable
 	private String bio;
-	
+
 	@Column(nullable = true)
 	@Nullable
 	private String image;
-	
-	
-	
-	
 
 }

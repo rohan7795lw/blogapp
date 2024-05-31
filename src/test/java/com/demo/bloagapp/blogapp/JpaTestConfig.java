@@ -1,5 +1,7 @@
 package com.demo.bloagapp.blogapp;
 
+import java.util.Collection;
+
 import javax.sql.DataSource;
 
 import org.springframework.context.annotation.Bean;
@@ -18,7 +20,7 @@ public class JpaTestConfig {
 		
 		datasource.setDriverClassName("org.h2.Driver");
 		datasource.setUrl("jdbc:h2:mem:test;DB_CLOSE_DELAY=-1");
-		
+	
 		return datasource;
 	}
 }

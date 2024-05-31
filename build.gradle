@@ -43,7 +43,7 @@ tasks.named('test') {
 jar {
     manifest {
         attributes (
-                'Main-Class': 'com.demo.bloagapp.blogapp.BlogappApplication',
+                'Main-Class': 'com.demo.bloagapp.blogapp.BlogappApplication',	
         )
     }
 }
